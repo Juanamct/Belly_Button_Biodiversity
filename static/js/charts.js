@@ -84,7 +84,7 @@ function buildCharts(sample) {
       type: "bar",
       orientation: "h",
       marker: {
-      color: "#A17F96",
+      color: "FFEE97",
       width: 1
       },
     }];
@@ -123,7 +123,7 @@ function buildCharts(sample) {
       mode: "markers",
       marker: {
         color: otu_ids,
-        colorscale: [[0, "#D6E6E6"], [1, "#67A1A0"]],
+        colorscale: [[0, "#FFF8D5"], [1, "#DAB600"]],
         size: sample_values
       } 
     }];
@@ -172,7 +172,7 @@ function buildCharts(sample) {
         {range: [6, 8], color: "#88B6B5"},
         {range: [8, 10], color: "#67A1A0"},
       ],
-      bar: {color: "FFD700"},
+      bar: {color: "FFEE97"},
       bgcolor: "000000",
     }
    }];
