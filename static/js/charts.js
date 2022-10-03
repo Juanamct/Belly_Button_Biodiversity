@@ -4,7 +4,7 @@ function init() {
 
   // Use the list of sample names to populate the select options
   d3.json("samples.json").then((data) => {
-  //console.log(data);
+  console.log(data);
     var sampleNames = data.names;
 
     sampleNames.forEach((sample) => {
@@ -83,19 +83,35 @@ function buildCharts(sample) {
       text: otu_labels.slice(0,10),
       type: "bar",
       orientation: "h",
+      marker: {
+      color: "#A17F96",
+      width: 1
+      },
     }];
 
       // 9. Create the layout for the bar chart. 
     var barLayout = {
-      title: "Top 10 Bacterial Species (OTUs)",
+      
       xaxis: {title: "Sample Values"},
       yaxis: {title: "OTU Ids"},
-    };
+        title: {
+          text: "<b>Top 10 Bacterial Species (OTUs)</b>",
+          font: {
+           family: "Calibri",
+           size: 28,
+           color: "#006666"
+        }
+      },
+        font: {
+          family: "Calibri, body",
+          size: 14,
+          color: "#000000"
+        },
+    }
+
   // 10. Use Plotly to plot the data with the layout. 
     Plotly.newPlot("bar", barData, barLayout);
 
-  
-  
 // Bubble chart
 
     // 1. Create the trace for the bubble chart.
@@ -107,15 +123,28 @@ function buildCharts(sample) {
       mode: "markers",
       marker: {
         color: otu_ids,
+        colorscale: [[0, "#D6E6E6"], [1, "#67A1A0"]],
         size: sample_values
       } 
     }];
       
         // 2. Create the layout for the bubble chart.
     var bubbleLayout = {
-      title: "Bacteria Cultures per Sample",
       xaxis: {title: "OTU IDS"},
       hovermode: "closest",
+      title: {
+        text: "<b>Bacteria Cultures per Sample</b>",
+        font: {
+          family: "Calibri",
+          size: 28,
+          color: "#006666"
+        }
+        },
+      font: {
+        family: "Calibri, bold",
+        size: 18,
+        color: "#006666"
+      },
     };
 
     // 3. Use Plotly to plot the data with the layout.
@@ -126,19 +155,43 @@ function buildCharts(sample) {
     value: washingFrequency,
     type: "indicator",
     mode: "gauge+number",
-    title: "Scrubs per Week",
+    title: {
+      text: "<b>Scrubs per Week</b>",
+      font: {
+        family: "Calibri",
+        size: 24,
+        color: "#2034346"
+      }
+      },
     gauge: {
       axis: {range: [null, 10], dtick: 2},
-      bar: {color: "black"},
-      bgcolor: "F8FAFC",
+      steps: [
+        {range: [0, 2], color: "#D6E6E6"},
+        {range: [2, 4], color: "#C1D9D8"},
+        {range: [4, 6], color: "#A2C6C5"},
+        {range: [6, 8], color: "#88B6B5"},
+        {range: [8, 10], color: "#67A1A0"},
+      ],
+      bar: {color: "FFD700"},
+      bgcolor: "000000",
     }
    }];
          
     // 5. Create the layout for the gauge chart.
     var gaugeLayout = {
-      title: "Belly Button Washing Frequency",
+      title: {
+        text: "<b>Belly Button Washing Frequency</b>",
+        font: {
+          family: "Calibri",
+          size: 28,
+          color: "006666"
+        }
+      },
+    
       font: {
-        family: "Roboto",
+        family: "Calibri, bold",
+        size: 18,
+        color: "##203434"
       },
       plot_bgcolor: "#F8FAFC",
       paper_bgcolor: "#F8FAFC",

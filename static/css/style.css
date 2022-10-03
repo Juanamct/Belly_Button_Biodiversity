@@ -1,0 +1,52 @@
+body {
+  background-color: rgb(255, 251, 213);
+}
+
+
+.jumbotron {
+  background-image: url("../images/navelgazing.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-family: Calibri;
+  color:gold
+} 
+
+.footer {
+background-image: url("../images/navelgazing.jpg");
+background-position: center;
+background-repeat: no-repeat;
+text-align: left;
+font-family: Calibri;
+color:gold
+}
+
+.fade-in-text {
+    font-family: Calibri;
+    font-size: 150px;
+    animation: fadeIn 5s;  
+  }
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
