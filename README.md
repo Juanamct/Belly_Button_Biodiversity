@@ -1,5 +1,7 @@
 Belly_Button_Biodiversity
 
+![Header](https://user-images.githubusercontent.com/107228424/194192160-1890582e-01ac-46a3-8bce-30cc86dd6a5c.png)
+
 Background:
 
 What do you think is in your belly button? In 2011, a team of scientists from the biology department of NC State and the Nature Research Center at the North Carolina Museum of Natural Sciences launched the Belly Button Biodiversity Project to find out. For this project, people wiped cotton swabs in or on their belly buttons. 
@@ -37,6 +39,8 @@ Assignment Deliverables - Using JavaScript, Plotly, and D3.js:
 	- The top 10 sample_values are sorted in descending order
 	- The top 10 sample_values as values
 	- The otu_ids as the labels
+	- ![Bar](https://user-images.githubusercontent.com/107228424/194191735-3283f252-5aa1-446b-8c0c-131489db3e79.jpg)
+
 
 2. Create a Bubble Chart
    That will display the individual’s ID that is selected from the dropdown menu webpage.
@@ -51,9 +55,13 @@ Assignment Deliverables - Using JavaScript, Plotly, and D3.js:
    b) The code for the layout in the buildCharts(); function does the following:
 	- Creates a title
 	- Creates a label for the x-axis
-	- The text for a bubble is shown when hovered over
+	- The text for a bubble is shown when hovered over  
+![Bubble_hover](https://user-images.githubusercontent.com/107228424/194191777-73e68623-47a3-414f-b6c6-30a95eaeb00a.jpg)
+
+
 
    c) When the dashboard is first opened in a browser, ID 940’s data should be displayed in the dashboard. All three charts should reflect the individual volunteers  data sample when selected from the dropdown menu.
+   	![Test_Subject_940](https://user-images.githubusercontent.com/107228424/194189524-297f8e08-40a1-4198-bdc4-c64168971b7d.jpg)
 
 3. Create a Gauge Chart
    That displays the weekly washing frequency's value when an individual ID is selected from the dropdown menu.
@@ -66,11 +74,14 @@ Assignment Deliverables - Using JavaScript, Plotly, and D3.js:
 	- The gauge is added to the dashboard.
 	- The gauge fits in the margin of the <div> element.
    b) When the webpage loads, the bar and bubble chart are working according to the requirements in Deliverable 1 and 2, respectively, and the gauge chart is working according to the requirements listed for this Deliverable.
+	
+        -![Gauge](https://user-images.githubusercontent.com/107228424/194191881-aabff72d-c108-4123-8577-a2353077f147.jpg)
+
 
 4). Customize the Dashboard
     Use your knowledge of HTML and Bootstrap to customize the webpage for your dashboard.
 
-   a) The webpage has three customizations.
+   a) The webpage has three customizations.  (See image of website below.)
    b) When the dashboard is first opened in a browser, ID 940’s data should be displayed in the dashboard, and all three charts should be working according to the requirements when a sample is selected from the dropdown menu.
 
 *App deployed on a free static page hosting service, GitHub Pages.
@@ -78,5 +89,6 @@ Assignment Deliverables - Using JavaScript, Plotly, and D3.js:
 Source Credit:
 http://robdunnlab.com/projects/belly-button-biodiversity/
 
+![image](https://user-images.githubusercontent.com/107228424/194189121-6ae0f736-54e6-4547-9c6a-199df17abab6.png)
 
 
