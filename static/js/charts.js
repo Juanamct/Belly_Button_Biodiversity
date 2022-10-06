@@ -38,7 +38,7 @@ function buildMetadata(sample) {
     var resultArray = metadata.filter(sampleObj => sampleObj.id == sample);
     var result = resultArray[0];
     // Use d3 to select the panel with id of `#sample-metadata`
-    var PANEL = d3.select("#samples-metadata");
+    var PANEL = d3.select("#sample-metadata");
 
     // Use `.html("") to clear any existing metadata
     PANEL.html("");
@@ -49,7 +49,7 @@ function buildMetadata(sample) {
     Object.entries(result).forEach(([key, value]) => {
       PANEL.append("h6").text(`${key.toUpperCase()}: ${value}`);
     });
-  })
+  });
 }
 
 // 1. Create the buildCharts function.

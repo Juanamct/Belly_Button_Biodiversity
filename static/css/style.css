@@ -12,6 +12,17 @@ body {
   color:gold
 } 
 
+.well {
+  background-color: "#006666";
+  font-family: Calibri;
+  color:black;
+  font-weight: bolder;
+}
+
+h5 {
+  font-size: larger;
+}
+
 .footer {
 background-image: url("../images/navelgazing.jpg");
 background-position: center;
@@ -19,6 +30,11 @@ background-repeat: no-repeat;
 text-align: left;
 font-family: Calibri;
 color:gold
+}
+
+li {
+  font-size: x-large;
+  font-weight: bold;
 }
 
 .fade-in-text {
